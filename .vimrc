@@ -1,59 +1,27 @@
-"Close all vim windows after updating .vimrc
+"close all vim windows after updating .vimrc
+"for mac terminal, use font Monaco Regular 15pt, homebrew theme as default
+"text color = bright blue category
 
-"NERD-Tree settings
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'git://git.wincent.com/command-t.git'
-filetype plugin indent on    
-Plugin 'The-NERD-Tree'
-
-"line numbers on
-set number
-
-"syntax
 syntax on
 
-"clipboard on
-"Check cmd > vim --version and availability of clipboard function 
-set clipboard=unnamedplus
-set clipboard=unnamed
-
-"auto-close brackets
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
-"Close all vim windows after updating .vimrc
-
-"NERD-Tree settings
+background color
+set background=dark
+ 
+"Plugins
 set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'git://git.wincent.com/command-t.git'
-filetype plugin indent on    
-Plugin 'The-NERD-Tree'
+call plug#begin(expand('~/.vim/plugged'))
+Plug 'preservim/nerdtree'
+call plug#end()
 
-"line numbers on
+"Download jellybeans -> ~/.vim/colors 
+colorscheme jellybeans 
+
 set number
+set tabstop=4
+set belloff=all
 
-"syntax
-syntax on
-
-"clipboard on
-"Check cmd > vim --version and availability of clipboard function 
-set clipboard=unnamedplus
-set clipboard=unnamed
-
-"auto-close brackets
-inoremap " ""<left>
+"auto brackets
+noremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
