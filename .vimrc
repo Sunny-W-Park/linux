@@ -4,21 +4,25 @@
 
 syntax on
 
-background color
+"background color
 set background=dark
  
 "Plugins
 set nocompatible
+
+"Vim-plug function
 call plug#begin(expand('~/.vim/plugged'))
+"NERDTree
 Plug 'preservim/nerdtree'
 call plug#end()
 
-"Download jellybeans -> ~/.vim/colors 
-colorscheme jellybeans 
+"Download jellybeans(https://github.com/nanotech/jellybeans.vim) -> ~/.vim/colors 
+colorscheme jellybeans
 
 set number
 set tabstop=4
 set belloff=all
+set clipboard=unnamed
 
 "auto brackets
 noremap " ""<left>
@@ -28,4 +32,3 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-
