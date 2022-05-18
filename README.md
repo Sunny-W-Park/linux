@@ -1,4 +1,4 @@
-# linux
+# My linux settings
 Working with Linux
 
 ## Vim settings
