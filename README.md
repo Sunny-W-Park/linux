@@ -6,6 +6,7 @@ Working with Linux
 ### install vim
 ```sh
 >> sudo apt install vim
+>> sudo apt install vim-gtk     # add more packages
 ```
 
 ### install vim-plug
