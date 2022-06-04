@@ -22,7 +22,8 @@ colorscheme jellybeans
 set number
 set tabstop=4
 set belloff=all
-set clipboard=unnamed
+"Copy to clipboard w/ "+y
+set clipboard=unnamedplus
 
 "auto brackets
 noremap " ""<left>
